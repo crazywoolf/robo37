@@ -1,0 +1,18 @@
+﻿@using Domain.Entities
+@model IEnumerable<Course>
+
+@{
+    ViewBag.Title = "Курсы";
+}
+
+@foreach (Course course in Model)
+{
+    <div>
+        <h3>@course.Name</h3>
+        <p>@course.Teacher</p>
+        <h4>@course.Price.ToString("# руб\\.")</h4>
+    </div>
+    <hr />
+}
+       
+

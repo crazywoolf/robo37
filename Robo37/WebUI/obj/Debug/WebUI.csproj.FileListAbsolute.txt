@@ -28,7 +28,6 @@ D:\Project\Robo37\Robo37\WebUI\bin\WebUI.dll.config
 D:\Project\Robo37\Robo37\WebUI\bin\WebUI.dll
 D:\Project\Robo37\Robo37\WebUI\bin\WebUI.pdb
 D:\Project\Robo37\Robo37\WebUI\bin\Castle.Core.dll
-D:\Project\Robo37\Robo37\WebUI\bin\ClassLibrary1.dll
 D:\Project\Robo37\Robo37\WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Project\Robo37\Robo37\WebUI\bin\Microsoft.Web.Infrastructure.dll
 D:\Project\Robo37\Robo37\WebUI\bin\Moq.dll
@@ -42,7 +41,6 @@ D:\Project\Robo37\Robo37\WebUI\bin\System.Web.Webpages.Deployment.dll
 D:\Project\Robo37\Robo37\WebUI\bin\System.Web.Webpages.dll
 D:\Project\Robo37\Robo37\WebUI\bin\System.Web.Webpages.Razor.dll
 D:\Project\Robo37\Robo37\WebUI\bin\WebActivatorEx.dll
-D:\Project\Robo37\Robo37\WebUI\bin\ClassLibrary1.pdb
 D:\Project\Robo37\Robo37\WebUI\bin\Castle.Core.xml
 D:\Project\Robo37\Robo37\WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Project\Robo37\Robo37\WebUI\bin\Moq.xml
@@ -64,3 +62,5 @@ D:\Project\Robo37\Robo37\WebUI\bin\ru\System.Web.Mvc.resources.dll
 D:\Project\Robo37\Robo37\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 D:\Project\Robo37\Robo37\WebUI\obj\Debug\WebUI.dll
 D:\Project\Robo37\Robo37\WebUI\obj\Debug\WebUI.pdb
+D:\Project\Robo37\Robo37\WebUI\bin\Domain.dll
+D:\Project\Robo37\Robo37\WebUI\bin\Domain.pdb

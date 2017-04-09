@@ -34,7 +34,6 @@ D:\Project\Robo37\Robo37\UnitTest\bin\Debug\UnitTest.dll.config
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\UnitTest.dll
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\UnitTest.pdb
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\Castle.Core.dll
-D:\Project\Robo37\Robo37\UnitTest\bin\Debug\ClassLibrary1.dll
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\Microsoft.Web.Infrastructure.dll
@@ -50,7 +49,6 @@ D:\Project\Robo37\Robo37\UnitTest\bin\Debug\System.Web.WebPages.dll
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\System.Web.WebPages.Razor.dll
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\WebActivatorEx.dll
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\WebUI.dll
-D:\Project\Robo37\Robo37\UnitTest\bin\Debug\ClassLibrary1.pdb
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\WebUI.pdb
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\WebUI.dll.config
 D:\Project\Robo37\Robo37\UnitTest\bin\Debug\Castle.Core.xml
@@ -75,3 +73,5 @@ D:\Project\Robo37\Robo37\UnitTest\bin\Debug\ru\System.Web.WebPages.Razor.resourc
 D:\Project\Robo37\Robo37\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
 D:\Project\Robo37\Robo37\UnitTest\obj\Debug\UnitTest.dll
 D:\Project\Robo37\Robo37\UnitTest\obj\Debug\UnitTest.pdb
+D:\Project\Robo37\Robo37\UnitTest\bin\Debug\Domain.dll
+D:\Project\Robo37\Robo37\UnitTest\bin\Debug\Domain.pdb
