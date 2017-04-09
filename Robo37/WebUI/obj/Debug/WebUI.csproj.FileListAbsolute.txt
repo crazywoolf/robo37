@@ -64,3 +64,8 @@ D:\Project\Robo37\Robo37\WebUI\obj\Debug\WebUI.dll
 D:\Project\Robo37\Robo37\WebUI\obj\Debug\WebUI.pdb
 D:\Project\Robo37\Robo37\WebUI\bin\Domain.dll
 D:\Project\Robo37\Robo37\WebUI\bin\Domain.pdb
+D:\Project\Robo37\Robo37\WebUI\bin\EntityFramework.dll
+D:\Project\Robo37\Robo37\WebUI\bin\EntityFramework.SqlServer.dll
+D:\Project\Robo37\Robo37\WebUI\bin\Domain.dll.config
+D:\Project\Robo37\Robo37\WebUI\bin\EntityFramework.xml
+D:\Project\Robo37\Robo37\WebUI\bin\EntityFramework.SqlServer.xml

@@ -8,8 +8,8 @@
 @foreach (Course course in Model)
 {
     <div>
-        <h3>@course.Name</h3>
-        <p>@course.Teacher</p>
+        <h3>@course.Name - @course.Teacher</h3>
+        <p>@course.Description</p>
         <h4>@course.Price.ToString("# руб\\.")</h4>
     </div>
     <hr />

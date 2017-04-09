@@ -21,3 +21,9 @@ D:\Project\Robo37\Robo37\ClassLibrary1\bin\Debug\Domain.dll
 D:\Project\Robo37\Robo37\ClassLibrary1\bin\Debug\Domain.pdb
 D:\Project\Robo37\Robo37\ClassLibrary1\obj\Debug\Domain.dll
 D:\Project\Robo37\Robo37\ClassLibrary1\obj\Debug\Domain.pdb
+D:\Project\Robo37\Robo37\ClassLibrary1\bin\Debug\Domain.dll.config
+D:\Project\Robo37\Robo37\ClassLibrary1\bin\Debug\EntityFramework.dll
+D:\Project\Robo37\Robo37\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\Robo37\Robo37\ClassLibrary1\bin\Debug\EntityFramework.xml
+D:\Project\Robo37\Robo37\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\Robo37\Robo37\ClassLibrary1\obj\Debug\Domain.csprojResolveAssemblyReference.cache

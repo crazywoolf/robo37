@@ -1,4 +1,5 @@
 ﻿using Domain.Abstract;
+using Domain.Concrete;
 using Domain.Entities;
 using Moq;
 using Ninject;
@@ -22,15 +23,8 @@ namespace WebUI.Infrastructure
 
         private void AddBindings()
         {
-            Mock<ICourseRepository> mock = new Mock<ICourseRepository>();
-            mock.Setup(m => m.Courses).Returns(new List<Course>
-            {
-                new Course { Name = "Техноканикулы", Teacher = "Смирнов С.В.", Price = 7500 },
-                new Course { Name = "Робоканикулы", Teacher = "Казарин А.С.", Price = 7500 },
-                new Course { Name = "Робототехника. 1-ый уровень", Teacher = "Титов Д.С.", Price = 16000 }
-
-            });
-            kernel.Bind<ICourseRepository>().ToConstant(mock.Object);
+            
+            kernel.Bind<ICourseRepository>().To<EFCourseRepository>();
         }
         public object GetService(Type serviceType)
         {
