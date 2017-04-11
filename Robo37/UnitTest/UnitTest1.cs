@@ -6,13 +6,16 @@ using Domain.Entities;
 using System.Collections.Generic;
 using WebUI.Controllers;
 using System.Linq;
+using System.Web.Mvc;
+using WebUI.Models;
+using WebUI.HtmlHelpers;
 
 namespace UnitTest
 {
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
+        // [TestMethod]
         public void Can_Paginate()
         {
             Mock<ICourseRepository> mock = new Mock<ICourseRepository>();
@@ -30,10 +33,34 @@ namespace UnitTest
 
             IEnumerable<Course> result = (IEnumerable<Course>)controller.List(2).Model;
 
+            // Утверждение (assert)
             List<Course> courses = result.ToList();
             Assert.IsTrue(courses.Count == 2);
-            Assert.AreEqual(courses[0].Name, "Course1");
+            Assert.AreEqual(courses[0].Name, "Course4");
             Assert.AreEqual(courses[1].Name, "Course5");
+        }
+
+        [TestMethod]
+        public void Can_Generate_Page_Links()
+        {
+            // Организация
+            HtmlHelper myHelper = null;
+            PagingInfo pagingInfo = new PagingInfo
+            {
+                CurrentPage = 2,
+                TotalItems = 28,
+                ItemsPerPage = 10
+            };
+            Func<int, string> pageUrlDelegate = i => "Page" + i;
+            
+            // Действие
+            MvcHtmlString result = myHelper.PageLinks(pagingInfo, pageUrlDelegate);
+
+            // Утверждение
+            Assert.AreEqual(@"<a class=""btn btn-default"" href=""Page1"">1</a>"
+                + @"<a class=""btn btn-default btn-primary selected"" href=""Page2"">2</a>"
+                + @"<a class=""btn btn-default"" href=""Page3"">3</a>",
+                result.ToString());
         }
     }
 }
