@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebUI.Models;
 
 namespace WebUI.Controllers
 {
@@ -19,10 +20,21 @@ namespace WebUI.Controllers
 
         public ViewResult List(int page = 1)
         {
-            return View(repository.Courses
+            CoursesListViewModel model = new CoursesListViewModel
+            {
+                Courses = repository.Courses
                 .OrderBy(course => course.CourseId)
-                .Skip((page - 1)*pageSize)
-                .Take(pageSize));
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize),
+                PagingInfo = new PagingInfo
+                {
+                    CurrentPage = page,
+                    ItemsPerPage = pageSize,
+                    TotalItems = repository.Courses.Count()
+                }
+            };
+
+            return View(model);
         }
     }
 }
