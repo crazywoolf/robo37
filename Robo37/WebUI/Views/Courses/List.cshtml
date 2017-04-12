@@ -7,15 +7,10 @@
 
 @foreach (var course in Model.Courses)
 {
-    <div>
-        <h3>@course.Name - @course.Teacher</h3>
-        <p>@course.Description</p>
-        <h4>@course.Price.ToString("# руб\\.")</h4>
-    </div>
-    <hr />
+    @Html.Partial("_CourseSummary", course)
 }
 
-<div>
+<div class="btn-group pull-left-right">
     @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new {  page = x}))
 </div>
        
