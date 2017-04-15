@@ -14,15 +14,34 @@ namespace WebUI
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                null,
+                "",
+                new { controller = "Courses", action = "List", genre = (string)null, page = 1 }             
+            );
+            
+            routes.MapRoute(
                 name: null,
                 url: "Page{page}",
-                defaults: new {  controller = "Courses", action = "List"}
+                defaults: new {  controller = "Courses", action = "List", genre = (string)null},
+                constraints: new { page = @"/d+" }
                 );
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Courses", action = "List", id = UrlParameter.Optional }
+                null,
+                "{genre}",
+                new { controller = "Courses", action = "List", page = 1 }              
+            );
+
+            routes.MapRoute(
+                null,
+                "{genre}/Page{page}",
+                new { controller = "Courses", action = "List" },
+                new { page = @"/d+"}
+            );
+
+            routes.MapRoute(
+                null,
+                "{controller}/{action}"
             );
         }
     }

@@ -11,7 +11,8 @@
 }
 
 <div class="btn-group pull-left-right">
-    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new {  page = x}))
-</div>
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new {  page = x, genre = Model.CurrentGenre}))
+</div> 
+//проверить всё
        
 

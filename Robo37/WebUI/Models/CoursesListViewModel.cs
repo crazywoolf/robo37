@@ -10,5 +10,6 @@ namespace WebUI.Models
     {
         public IEnumerable<Course> Courses { get; set; }
         public PagingInfo PagingInfo { get; set; }
+        public string CurrentGenre { get; set; }
     }
 }
