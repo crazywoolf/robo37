@@ -31,7 +31,9 @@ namespace WebUI.Controllers
                 {
                     CurrentPage = page,
                     ItemsPerPage = pageSize,
-                    TotalItems = repository.Courses.Count()
+                    TotalItems = genre == null ? 
+                        repository.Courses.Count() : 
+                        repository.Courses.Where(course => course.Genre == genre).Count()
                 },
                 CurrentGenre = genre
             };
