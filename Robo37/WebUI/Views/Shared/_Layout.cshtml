@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
     <title>@ViewBag.Title </title>
-
+    <style>
+        .navbar-right {
+            float:right !important;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse">
         <a class="navbar-brand" href="#"> Robo37 - Робототехника в Иванове</a>
+        @Html.Action("Summary", "Cart") 
     </div>
     
     <div class="row panel">

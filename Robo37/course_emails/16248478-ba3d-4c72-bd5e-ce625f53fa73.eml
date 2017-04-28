@@ -1,0 +1,17 @@
+X-Sender: course@example.com
+X-Receiver: orders@example.com
+MIME-Version: 1.0
+From: course@example.com
+To: orders@example.com
+Date: 28 Apr 2017 18:31:33 +0300
+Subject: =?utf-8?B?0J3QvtCy0YvQuSDQt9Cw0LrQsNC3INC+0YLQv9GA0LDQstC7?=
+ =?utf-8?B?0LXQvSE=?=
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+0J3QvtCy0YvQuSDQt9Cw0LrQsNC3INC+0LHRgNCw0LHQvtGC0LDQvQ0KLS0tDQrQotC+
+0LLQsNGA0Ys6DQoxIHgg0KLQtdGF0L3QvtC60LDQvdC40LrRg9C70YsgKNC40YLQvtCz
+0L46IDfCoDUwMCwwMCDigr3QntCx0YnQsNGPINGB0YLQvtC40LzQvtGB0YLRjCA3wqA1
+MDAsMDAg4oK9LS0tDQrQlNC+0YHRgtCw0LLQutCwOg0K0JjRgNC40L3QsA0K0KHRgtGA
+0LjRgg0KDQoNCtCY0LLQsNC90L7QstC+DQrQoNC+0YHRgdC40Y8NCi0tLQ0K0J/QvtC0
+0LDRgNC+0YfQvdCw0Y8g0YPQv9Cw0LrQvtCy0LrQsDog0JTQsA==
