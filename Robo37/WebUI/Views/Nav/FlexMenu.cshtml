@@ -3,7 +3,7 @@
 @{ 
     bool horizontal = (bool)(ViewContext.RouteData.Values["horizontalNav"] ?? false);
     string wrapperClasses = horizontal ? "btn-group btn-group-sm btn-group-justified" : null;
-}}
+}
 
 <div class="@wrapperClasses">
     @Html.ActionLink("Домой", "List", "Courses", null,
