@@ -24,8 +24,8 @@ namespace WebUI.Controllers
                 .Select(course => course.Genre)
                 .Distinct()
                 .OrderBy(x => x);
-
-            return PartialView(genres);
+            
+            return PartialView("FlexMenu", genres);
         }
     }
 }
