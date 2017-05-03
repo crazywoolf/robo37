@@ -15,5 +15,26 @@ namespace Domain.Concrete
         {
             get { return context.Courses; }
         }
+
+        public void SaveCourse(Course course)
+        {
+            if (course.CourseId == 0)
+            {
+                context.Courses.Add(course);
+            }
+            else
+            {
+                Course dbEntry = context.Courses.Find(course.CourseId);
+                if (dbEntry != null)
+                {
+                    dbEntry.Name = course.Name;
+                    dbEntry.Teacher = course.Teacher;
+                    dbEntry.Description = course.Description;
+                    dbEntry.Genre = course.Genre;
+                    dbEntry.Price = course.Price;
+                }
+            }
+            context.SaveChanges();
+        }
     }
 }

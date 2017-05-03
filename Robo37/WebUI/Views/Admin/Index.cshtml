@@ -33,7 +33,7 @@
             {
                 <tr>                   
                     <td class="text-right">
-                        @Html.DisplayFor(modelItem => item.CourseId)
+                        @item.CourseId
                     </td>
                     <td>
                         @Html.ActionLink(item.Name, "Edit", new { item.CourseId})
@@ -42,13 +42,13 @@
                         @Html.DisplayFor(modelItem => item.Teacher)
                     </td>
                     <td class="text-right">
-                        @item.Price.ToString("# руб")
+                        @Html.DisplayFor(modelItem => item.Price)
                     </td>
                     <td class="text-center">
                         @using (Html.BeginForm("Delete", "Admin"))
                         {
                             @Html.Hidden("CourseId", item.CourseId)
-                            <input type="submit" class="btn btn-default btn-xs" value="Удалить"/>
+                            <input type="submit" class="btn btn-default btn-xs" value="Удалить" />
                         }
                     </td>
                 </tr>
